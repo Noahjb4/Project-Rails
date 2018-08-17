@@ -1,0 +1,72 @@
+<html>
+    <head>
+      
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>  
+      
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  
+      <link rel="stylesheet" href="../css/style.css">
+  
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>        
+    
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+    
+    </head>
+    
+    <body>
+        
+          
+     
+     <!--Navigation bar -->
+      <nav >
+        <div class="navbar-fixed">
+          <a href="#!" class="brand-logo"><h5>Rails</h5></a>
+          <ul class="right hide-on-med-and-down">
+            <a  href="#!" class="brand-logo center"><img src="../images/icon.png" width="60px"></img></a>
+            <li><a href="/times">Times</a></li>
+            <li><form class="text">
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form></li>
+            <li><a href="badges.html"><i  class="material-icons right"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      
+      <iframe src="https://www.google.com/maps/d/embed?mid=1eMniSqtkyCteg8doEmPUrhE28x0" width="80%" height="80%"></iframe>
+        
+        
+    
+    
+     <script>
+      $(document).ready(function() {
+      	$(".dropdown-trigger").dropdown();
+      });
+      </script>
+      
+      <script>
+      $(document).ready(function(){
+      $('.sidenav').sidenav();
+      });</script>
+    
+      <script>document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });</script>
+    
+    
+    
+    </body>
+    
+</html>

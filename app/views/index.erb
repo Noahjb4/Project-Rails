@@ -28,35 +28,39 @@
 }
 
 .nav-padding {
-  left:70px ;
+  left:140px ;
   bottom:4px;
 }
 
+.side-padding {
+  left: 80px ;
+}
 .color{
   color:black;
 }
+
+        .transparentBG {
+            background-color: rgba(255,255,255,0.8);
         }
-        .dark_opacity { 
-            opacity: 1000 ;
-        }
-        
+
 </style>
      
      <!--Navigation bar -->
       <nav>
         
-        <div class="nav-wrapper">
-          <a  href="/" class="brand-logo nav-padding"></img>Rails</a>
-          <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
-          <a  href="/" class="brand-logo"><img src="../images/icon.png" width="60px"></img></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger color"><i class="material-icons">menu</i></a>
+        
+        <div class="nav-wrapper ">
+          <a  href="/" class="brand-logo side-padding"><img src="../images/icon.png" width="60px"></img></a>
+          <a  href="/" class="brand-logo nav-padding"></img>Project Rails</a>
           <ul class="right hide-on-med-and-down">
              <li><a href="/map">Map</a></li>
-             <li><a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a></li>
             <li><form class="text">
               <div class="input-field">
-                <input id="search" type="search" required>
+                <input id="search" type="search" name="page" required>
                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
+                <div class="search-results"></div>
               </div>
             </form></li>
             <li><a href="badges.html"><i  class="material-icons right"></i></a></li>
@@ -64,7 +68,8 @@
         </div>
       </nav>
       
-     <ul id="slide-out" class="sidenav">
+      <a href="#" data-target="slide-out" class="sidenav-trigger side-padding"><i class="material-icons">menu</i></a>
+     <ul id="slide-out" class="sidenav transparentBG">
     <li><div class="user-view">
       <div class="background">
         <img src="../images/new.jpeg">
@@ -76,10 +81,11 @@
     <li><a href="#!">Train Lines</a></li>
     <li><div class="divider"></div></li>
     <li><a class="waves-effect" href="/six"><i class="material-icons">cloud</i> 6 </a></li>
+    <li><a class="waves-effect" href="/four"><i class="material-icons">cloud</i> 4 </a></li>
     <li><a class="waves-effect" href="/Q"><i class="material-icons">cloud</i> Q </a></li>
-    <li><a class="waves-effect" href="/times"><i class="material-icons">cloud</i></a></li>
+    <li><a class="waves-effect" href="/one"><i class="material-icons">cloud</i>1</a></li>
+    <li><a class="waves-effect" href="/two"><i class="material-icons">cloud</i>2</a></li>
   </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
   
         
 
@@ -95,7 +101,8 @@
     <div class="section grey">
       <div class="row container">
         <h2 class="header">Rails</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        <h5 class="header">Your Personal Guide to the City </h5>
+        <p class="grey-text text-darken-3 lighten-3">Project Rails is a service for anyone who finds themselves using the subway in The Big Apple! Project Rails allows you to browse the many subway lines that live under New York City and how long you have to wait to hop on a train at any station. Don't worry, we also tell you if there are any delays!</p>
       </div>
     </div>
     <div class="parallax-container">
@@ -106,14 +113,14 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">.</p>
+                <h5 class="white-text">Porject Rails</h5>
+                <p class="grey-text text-lighten-4">Using the subway made easy with acurate times and delays. be sure to explore our site and use all of its features</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Media</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="blue-text text-lighten-3" href="#!">@ProjectRails</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li> 
                   <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                 </ul>
@@ -140,7 +147,6 @@
       $('.sidenav').sidenav();
       });</script>
       
-      <
     
       <script>  
   $(document).ready(function(){

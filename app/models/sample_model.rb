@@ -6,10 +6,7 @@ require 'httparty'
 def six_line
     six = [ 
         six_all_times = [],
-        
-        
         six_nights = []
-        
         ]
     return six 
 end
@@ -17,12 +14,42 @@ end
 def q_line
     q= [
         q_all_times = [],
-        
         q_nights = [ ] 
-        
         ]
     return q
 end 
+
+def one_line
+    one = [
+        one_all_times =[],
+        one_nights = []
+        ]
+    return one 
+end 
+def two_line
+    two = [
+        two_all_times = [],
+        two_nights = []
+        ]
+    return two
+end 
+
+def four_line
+    four = [
+        four_all_times = [], 
+        four_nights =[]
+    ]
+    return four
+end
+
+def five_line
+    five = [
+        five_all_times = [],
+        five_nights = []
+        ]
+    return five
+end
+    
  
  
  
@@ -76,9 +103,10 @@ end
 def return_train_line(all_stations, line, line_cat_1, line_cat_2, category)
     for x in 0..472
         if all_stations[x].lines.include?(line_cat_1)
-            line[0].push(all_stations[x])
-            all_stations[x].output_stations
+            station_name = all_stations[x]
+            line[0].push(station_name)
         elsif all_stations[x].lines.include?(line_cat_2)
+            station_name = (all_stations[x])
             line[0].push(all_stations[x])  
         end
     end

@@ -21,8 +21,17 @@
     <body>
               <style>
         .nav-wrapper {
-          background: linear-gradient(to right, red , yellow);
-        }
+  background: linear-gradient(to right, white , black);
+}
+
+.nav-padding {
+  left:70px ;
+  bottom:4px;
+}
+
+.color{
+  color:black;
+}
         
         body {
             background-image: url(../images/trains.png);
@@ -46,40 +55,48 @@
         }
         </style>
              
-             <!--Navigation bar -->
-              <nav >
-                <div class="nav-wrapper">
-                  <a href="/" class="brand-logo"><h5>Rails</h5></a>
-                  <ul class="right hide-on-med-and-down">
-                    <a  href="/" class="brand-logo center"><img src="../images/icon.png" width="60px"></img></a>
-                    <li><a href="/times">Times</a></li>
-                    <li><form class="text">
-                      <div class="input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
-                      </div>
-                    </form></li>
-                    <li><a href="badges.html"><i  class="material-icons right"></i></a></li>
-                  </ul>
-                </div>
-              </nav>
-              
-                         <ul id="slide-out" class="sidenav">
-                    <li><div class="user-view">
-                  <div class="background">
-                  </div>
-                  <a href="#user"><img class="circle" src="images/icon.png"></a>
-                  <a href="#name"><span class="black-text name">Rails</span></a>
-                  <a href="#email"><span class="black-text email">Find your line</span></a>
-                </div></li>
-                <li><a href="#!">Train Lines</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="/times"><i class="material-icons">cloud</i></a></li>
-                <li><a class="waves-effect" href="/times"><i class="material-icons">cloud</i></a></li>
-                <li><a class="waves-effect" href="/times"><i class="material-icons">cloud</i></a></li>
-              </ul>
-              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <!--Navigation bar -->
+      <nav>
+        
+        <div class="nav-wrapper">
+          <a  href="/" class="brand-logo nav-padding"></img>Project Rails</a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a  href="/" class="brand-logo"><img src="../images/icon.png" width="60px"></img></a>
+          <ul class="right hide-on-med-and-down">
+             <li><a href="/map">Map</a></li>
+             <li><a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a></li>
+            <li><form class="text">
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form></li>
+            <li><a href="badges.html"><i  class="material-icons right"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      
+     <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="../images/new.jpeg">
+      </div>
+      <a href="/"><img class="circle" src="images/icon.png"></a>
+      <a><span class="black-text"></span>Rails</a>
+      <a><span class="black-text email">Find your line</span></a>
+    </div></li>
+    <li><a href="#!">Train Lines</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="/six"><i class="material-icons">cloud</i> 6 </a></li>
+    <li><a class="waves-effect" href="/five"><i class="material-icons">cloud</i> 5 </a></li>
+    <li><a class="waves-effect" href="/four"><i class="material-icons">cloud</i>4</a></li>
+    <li><a class="waves-effect" href="/Q"><i class="material-icons">cloud</i> Q </a></li>
+    <li><a class="waves-effect" href="/one"><i class="material-icons">cloud</i>1</a></li>
+    <li><a class="waves-effect" href="/two"><i class="material-icons">cloud</i>2</a></li>
+    
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
               
               
     
@@ -91,7 +108,7 @@
      <table class = "tables grey lighten-2 highlight responsive-table">
         <thead>
           <tr>
-              <th>Station</th>
+              <th>Q Stations</th>
               <th>Est. Wait Time</th>
           </tr>
         </thead>
@@ -112,6 +129,31 @@
       </table>
             
 
+<footer class = "grey darken-3" class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Porject Rails</h5>
+                <p class="grey-text text-lighten-4">Using the subway made easy with acurate times and delays. be sure to explore our site and use all of its features</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Media</h5>
+                <ul>
+                  <li><a class="blue-text text-lighten-3" href="#!">@ProjectRails</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li> 
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            ©2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
         
         
     

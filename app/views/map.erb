@@ -24,13 +24,46 @@
         
           
      
+      <style>
+.nav-wrapper {
+  background: linear-gradient(to right, white , black);
+}
+
+.nav-padding {
+  left:70px ;
+  bottom:4px;
+}
+
+.color{
+  color:black;
+}
+
+body {
+  background-image: url(../images/metro.png);
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+        }
+        .dark_opacity { 
+            opacity: 1000 ;
+        }
+        
+</style>
+     
      <!--Navigation bar -->
-      <nav >
-        <div class="navbar-fixed">
-          <a href="#!" class="brand-logo"><h5>Rails</h5></a>
+      <nav>
+        
+        <div class="nav-wrapper">
+          <a  href="/" class="brand-logo nav-padding"></img>Project Rails</a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a  href="/" class="brand-logo"><img src="../images/icon.png" width="60px"></img></a>
           <ul class="right hide-on-med-and-down">
-            <a  href="#!" class="brand-logo center"><img src="../images/icon.png" width="60px"></img></a>
-            <li><a href="/times">Times</a></li>
+             <li><a href="/map">Map</a></li>
+             <li><a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a></li>
             <li><form class="text">
               <div class="input-field">
                 <input id="search" type="search" required>
@@ -43,11 +76,44 @@
         </div>
       </nav>
       
-      
-      <iframe src="https://www.google.com/maps/d/embed?mid=1eMniSqtkyCteg8doEmPUrhE28x0" width="80%" height="80%"></iframe>
-        
-        
+      <iframe src="https://www.google.com/maps/d/embed?mid=1eMniSqtkyCteg8doEmPUrhE28x0" width="80%" height="80%" ></iframe>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Subway Map</h4>
+      <p>This page contains a map with all of the new york city subway line! Use this page if you do not quite know what subway line you are looking for.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Continue</a>
+    </div>
+  </div>
     
+  <footer class = "grey darken-3" class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Porject Rails</h5>
+                <p class="grey-text text-lighten-4">Using the subway made easy with acurate times and delays. be sure to explore our site and use all of its features</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Media</h5>
+                <ul>
+                  <li><a class="blue-text text-lighten-3" href="#!">@ProjectRails</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li> 
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            ©2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>  
     
      <script>
       $(document).ready(function() {
@@ -65,7 +131,11 @@
     var instances = M.Parallax.init(elems, options);
   });</script>
     
-    
+    <script>  $(document).ready(function(){
+    $('.modal').modal();
+    $('.modal').modal('open'); 
+  });
+       </script>
     
     </body>
     

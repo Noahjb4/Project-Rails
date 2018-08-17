@@ -32,12 +32,10 @@
 .color{
   color:black;
 }
-
-
+        
         body {
             background-image: url(../images/trains.png);
         }
-        
         
         .tables {
             width: 60%;
@@ -57,7 +55,7 @@
         }
         </style>
              
-             <!--Navigation bar -->
+              <!--Navigation bar -->
       <nav>
         
         <div class="nav-wrapper">
@@ -96,7 +94,6 @@
     <li><a class="waves-effect" href="/Q"><i class="material-icons">cloud</i> Q </a></li>
     <li><a class="waves-effect" href="/one"><i class="material-icons">cloud</i>1</a></li>
     <li><a class="waves-effect" href="/two"><i class="material-icons">cloud</i>2</a></li>
-    
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
               
@@ -110,18 +107,18 @@
      <table class = "tables grey lighten-2 highlight responsive-table">
         <thead>
           <tr>
-              <th>6 Stations</th>
+              <th>Q Stations</th>
               <th>Est. Wait Time</th>
           </tr>
         </thead>
 
         <tbody>
             
-         <% for x in 0..(@six_length-1)%> 
+         <% for x in 0..(@four_length-1)%> 
             <% random = rand(2..8) %> 
             
             <tr>
-                <td><%= @six[0][x].name%></td>
+                <td><%= @four[0][x].name %></td>
                 <td><%=random%></td>
             </tr>
             
@@ -131,7 +128,7 @@
       </table>
             
 
-        <footer class = "grey darken-3" class="page-footer">
+<footer class = "grey darken-3" class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -156,6 +153,7 @@
             </div>
           </div>
         </footer>
+        
         
     
         

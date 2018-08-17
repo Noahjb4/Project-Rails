@@ -21,23 +21,12 @@
     <body>
               <style>
         .nav-wrapper {
-  background: linear-gradient(to right, white , black);
-}
-
-.nav-padding {
-  left:70px ;
-  bottom:4px;
-}
-
-.color{
-  color:black;
-}
-
-
+          background: linear-gradient(to right, white , black);
+        }
+        
         body {
             background-image: url(../images/trains.png);
         }
-        
         
         .tables {
             width: 60%;
@@ -55,9 +44,17 @@
         .transparentBG {
             background-color: rgba(0,0,0,0);
         }
+        
+        .nav-padding {
+          left:70px ;
+          bottom:4px;
+        }
+
+        .color{
+          color:black;
+        }
         </style>
              
-             <!--Navigation bar -->
       <nav>
         
         <div class="nav-wrapper">
@@ -78,27 +75,25 @@
           </ul>
         </div>
       </nav>
-      
-     <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="../images/new.jpeg">
-      </div>
-      <a href="/"><img class="circle" src="images/icon.png"></a>
-      <a><span class="black-text"></span>Rails</a>
-      <a><span class="black-text email">Find your line</span></a>
-    </div></li>
-    <li><a href="#!">Train Lines</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="waves-effect" href="/six"><i class="material-icons">cloud</i> 6 </a></li>
-    <li><a class="waves-effect" href="/five"><i class="material-icons">cloud</i> 5 </a></li>
-    <li><a class="waves-effect" href="/four"><i class="material-icons">cloud</i>4</a></li>
-    <li><a class="waves-effect" href="/Q"><i class="material-icons">cloud</i> Q </a></li>
-    <li><a class="waves-effect" href="/one"><i class="material-icons">cloud</i>1</a></li>
-    <li><a class="waves-effect" href="/two"><i class="material-icons">cloud</i>2</a></li>
-    
-  </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+                         <ul id="slide-out" class="sidenav">
+                    <li><div class="user-view">
+                  <div class="background">
+                  </div>
+                  <a href="#user"><img class="circle" src="images/icon.png"></a>
+                  <a href="#name"><span class="black-text name">Rails</span></a>
+                  <a href="#email"><span class="black-text email">Find your line</span></a>
+                </div></li>
+                <li><a href="#!">Train Lines</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect" href="/six"><i class="material-icons">cloud</i>6</a></li>
+                <li><a class="waves-effect" href="/five"><i class="material-icons">cloud</i> 5 </a></li>
+                <li><a class="waves-effect" href="/four"><i class="material-icons">cloud</i>4</a></li>
+                <li><a class="waves-effect" href="/Q"><i class="material-icons">cloud</i>Q</a></li>
+                <li><a class="waves-effect" href="/one"><i class="material-icons">cloud</i>1</a></li>
+                <li><a class="waves-effect" href="/two"><i class="material-icons">cloud</i>2</a></li>
+                
+              </ul>
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               
               
     
@@ -110,18 +105,18 @@
      <table class = "tables grey lighten-2 highlight responsive-table">
         <thead>
           <tr>
-              <th>6 Stations</th>
+              <th>1 Stations</th>
               <th>Est. Wait Time</th>
           </tr>
         </thead>
 
         <tbody>
             
-         <% for x in 0..(@six_length-1)%> 
+         <% for x in 0..(@one_length - 1)%> 
             <% random = rand(2..8) %> 
             
             <tr>
-                <td><%= @six[0][x].name%></td>
+                <td><%= @one[0][x].name%></td>
                 <td><%=random%></td>
             </tr>
             
@@ -131,6 +126,7 @@
       </table>
             
 
+        
         <footer class = "grey darken-3" class="page-footer">
           <div class="container">
             <div class="row">
@@ -156,7 +152,6 @@
             </div>
           </div>
         </footer>
-        
     
         
         
